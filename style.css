@@ -107,7 +107,7 @@ main{
  .bannerlogo img{
     position: absolute;
     width: 1000px;
-    left: 350px;
+    left: 200px;
     top: 600px;
     border-radius: 30px;
     cursor: pointer;
@@ -118,7 +118,7 @@ main{
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 1500px;
+    top: 1400px;
     gap: 100px;
     letter-spacing: 1px;
     word-spacing: 1px;
