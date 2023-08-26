@@ -965,7 +965,7 @@ main{
       
     
     }
-    .faq1 .input-group img{
+    .faq1 .input-group .plus-btn img{
         width: 45px;
         background-color: transparent;
         border-radius: 30px;
