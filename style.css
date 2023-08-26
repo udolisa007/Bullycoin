@@ -82,6 +82,16 @@ nav a{
     border: 1px solid rgb(34, 34, 208);
     border-radius: 5px;
 }
+.menu-button{
+    width: 30%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    right: 50px;
+}
+
 
 form{
     width: 50%;
@@ -139,29 +149,7 @@ form{
     color: white;
 }
 
-.comment-display {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 5px;
-    border: 0.5px solid black;
-    background:url("./images/dateme.webp");
-    padding-left: 10px;
- 
-}
 
-.input-group textarea{
-    width: 100%;
-    height: 60px;
-    color: rgb(0, 0, 0);
-    font-weight: lighter;
-}
-.input-group textarea:focus{
-    border: 1px solid crimson;
-    outline: none;
-}
 .social-account{
     width: 100%;
     display: flex;
@@ -180,12 +168,9 @@ form{
     font-weight: 200;
     color: grey;
 }
-.social-account p{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+.social-account img{
+    width: 20px;
+    
 }
 .social-account p a:hover img{
     filter: grayscale(1);}
@@ -323,6 +308,55 @@ main{
 
 .a2phone img{
     width: 700px;
+}
+.b2phone{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:1700px;
+    gap: 50px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+.b2phone h1{
+    font-size: 40px;
+}
+.b2phone p{
+    width: 400px;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.b2phone img{
+    width: 400px;
+}
+.b4phone{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:3150px;
+    gap: 50px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+
+}
+.b4phone h1{
+    font-size: 40px;
+}
+.b4phone p{
+    width: 400px;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.b4phone img{
+    width: 400px;
 }
 
 
@@ -521,6 +555,17 @@ main{
 
 
 @media (max-width:460px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    body{
+        width: 100%;
+        height: 100vh;
+    }
     
     header{
         width: 100%;
@@ -536,19 +581,20 @@ main{
         background-color: white;
     }
     header .logo{
-        width: 15%;
+        width: 10%;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 5px;
     }
     .logo img{
-        width: 70px;
+        width: 50px;
+        margin-left: 20px;
         cursor: pointer;
     }
 
     .logo h1{
-        font-size: 29px;
+        font-size: 20px;
         font-weight: 600;
         letter-spacing: 1px;
     }
@@ -557,14 +603,13 @@ main{
         justify-content: center;
         align-items: center;
        
-        margin-top: 580px;
-        margin-left: 200px;
+        margin-top: 800px;
+        margin-left: 300px;
         flex-direction: column;
-        height: 500px;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
+        height: 720px;
+       
         width: 100%;
-        background-color: aliceblue;
+        background-color: rgb(15, 62, 103);
         right:100%;
         padding: 20px;
         transition: .4s ease all;
@@ -572,9 +617,9 @@ main{
      
     }
     .display-menu a {
-        padding-left: 750px;
-        gap: 30%;
-        font-size: 25px;
+        padding-left: 2px;
+        gap: 3px;
+        font-size: 16px;
     }
   
     
@@ -586,7 +631,7 @@ main{
     }
     .btn-button{
         width: 15%;
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         gap: 20px;
@@ -611,8 +656,44 @@ main{
         border: 1px solid rgb(34, 34, 208);
         border-radius: 5px;
     }
+
+
+
+
+    .menu-button{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
+        right: 50px;
+    }
+    .menu-button .login , .signup{
+        width: 60px;
+        height: 22px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    .menu-button .login{
+        background-color: rgb(34, 34, 208);
+        color: white;
+        border: none;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+    .menu-button .signup{
+        background-color: white;
+        color:rgb(34, 34, 208) ;
+        border: 1px solid rgb(34, 34, 208);
+        border-radius: 5px;
+    }
+
     form{
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -625,7 +706,10 @@ main{
     }
     
     .title{
-        font-size: 30px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px !important;
         color: black;
         font-weight: 100;
         width: 100%;
@@ -638,11 +722,11 @@ main{
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        gap: 20px;
+        gap: 10px;
     }
     .input-group input, .acct-btn{
         width: 100%;
-        padding: 15px;
+        padding: 10px;
         outline: none;
         border: 1px solid grey;
         font-weight: lighter;
@@ -658,7 +742,7 @@ main{
         border: 1px solid rgb(23, 111, 188);
         color: grey;
         background-color: transparent;
-        font-size: 20px;
+        font-size: 15px;
         cursor: pointer;
         transition: 2s ease all;
     }
@@ -667,29 +751,10 @@ main{
         color: white;
     }
 
-.comment-display {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 5px;
-    border: 0.5px solid black;
-    background:url("./images/dateme.webp");
-    padding-left: 10px;
- 
-}
 
-.input-group textarea{
-    width: 100%;
-    height: 60px;
-    color: rgb(0, 0, 0);
-    font-weight: lighter;
-}
-.input-group textarea:focus{
-    border: 1px solid crimson;
-    outline: none;
-}
+
+
+
 .social-account{
     width: 100%;
     display: flex;
@@ -708,25 +773,75 @@ main{
     font-weight: 200;
     color: grey;
 }
-.social-account p{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+.social-account p img{
+    width: 15px;
+    
+}
+.social-account p a:hover img{
+    filter: grayscale(1);
 }
 .social-account p a:hover img{
     filter: grayscale(1);}
-    main{
-        width: 1350px;
-        height: 750px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color:rgb(34, 34, 208) ;
-        position: relative;
+
+
+
+@keyframes colorful{
+    0%{
+    
     }
+    25%{
+    
+    }
+    50%{
+    
+    }
+    75%{
+    
+    }
+    100%{
+    
+    }
+}
+@keyframes fading{
+    0%{background-image: url("./image1/btc.jpeg");
+        
+    }
+    25%{background-image: url("./image1/btc1.jpeg");
+        
+    }
+    50%{background-image: url("./image1/euth1.avif");
+       
+    }
+    75%{background-image: url("./image1/eutherium.jpeg");
+        
+    }
+    100%{background-image: url("./image1/dodge.jp");
+        
+    }
+    
+}
+
+
+main{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    position: relative;
+    
+    transition: all ease .5s;
+    animation: fading;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    background-image: url("./image/btc.jpeg");
+    background-size: 100%;
+    background-position: fit-content fit-content;
+    background-repeat: no-repeat;
+    background-color: blue;
+}
     .banner{
         width: 100%;
         display: flex;
@@ -738,14 +853,27 @@ main{
         position: absolute;
         gap: 10px;
     }
-    .banner h1{
-        font-size: 80px;
-        margin-bottom: 20px;
+    .banner .hh1{
+        position: relative;
+        width: 100% ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+        margin-bottom: 5px;
+        top: 80px;
+       
+        
 
     }
-    .banner p{
-        font-size: 40px;
+    .banner .pp1{
+        position:relative;
+        font-size: 19px;
         margin-bottom: 20px;
+        top: 100px;
+       
+        
 
     }
     
@@ -754,30 +882,32 @@ main{
        justify-content: center;
        align-items: center;
         position: absolute;
-        width: 1000px;
-        left: 200px;
-        top: 600px;
+        width: 400px;
+        height: 350px;
+        left: 30px;
+        top: 520px;
         border-radius: 30px;
         cursor: pointer;
     }
     .bitphone{
         width: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: 1400px;
-        gap: 100px;
+        top: 900px;
+        gap: 50px;
         letter-spacing: 1px;
         word-spacing: 1px;
         background-color: aliceblue;
     }
     .bitphone h1{
-        font-size: 60px;
+        font-size: 40px;
     }
     .bitphone p{
         width: 400px;
-        font-size: 30px;
+        font-size: 18px;
         font-weight: 100;
     }
     .bitphone small{
@@ -785,116 +915,174 @@ main{
         color:rgb(34, 34, 208) ;
     }
     .bitphone img{
-        width: 700px;
+        width: 400px;
     }
     
     .a2phone{
         width: 100%;
-        display: flex;
+        display: none;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         position: absolute;
-        top:2500px;
-        gap: 100px;
+        top:1700px;
+        gap: 50px;
         letter-spacing: 1px;
         word-spacing: 1px;
     }
     .a2phone h1{
-        font-size: 60px;
+        font-size: 40px;
     }
     .a2phone p{
         width: 400px;
-        font-size: 30px;
+        font-size: 18px;
         font-weight: 100;
     }
     
     .a2phone img{
-        width: 700px;
+        width: 400px;
+    }
+    
+
+    .b2phone{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top:1700px;
+        gap: 50px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+    }
+    .b2phone h1{
+        font-size: 40px;
+    }
+    .b2phone p{
+        width: 400px;
+        font-size: 18px;
+        font-weight: 100;
+    }
+    
+    .b2phone img{
+        width: 400px;
     }
     
     
     .a3phone{
         width: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         position: absolute;
-        top:3500px;
-        gap: 100px;
+        top:2450px;
+        gap: 50px;
         letter-spacing: 1px;
         word-spacing: 1px;
         background-color: aliceblue;
     }
     .a3phone h1{
-        font-size: 60px;
+        font-size: 40px;
     }
     .a3phone p{
         width: 400px;
-        font-size: 30px;
+        font-size: 18px;
         font-weight: 100;
     }
     
     .a3phone img{
-        width: 700px;
+        width: 400px;
     }
     .a4phone{
         width: 100%;
-        display: flex;
+        display: none;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         position: absolute;
-        top:4500px;
-        gap: 100px;
+        top:3150px;
+        gap: 50px;
         letter-spacing: 1px;
         word-spacing: 1px;
     
     }
     .a4phone h1{
-        font-size: 60px;
+        font-size: 40px;
     }
     .a4phone p{
         width: 400px;
-        font-size: 30px;
+        font-size: 18px;
         font-weight: 100;
     }
     
     .a4phone img{
-        width: 500px;
+        width: 400px;
     }
-    .a5phone{
+
+
+    .b4phone{
         width: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         position: absolute;
-        top:5200px;
-        gap: 100px;
+        top:3150px;
+        gap: 50px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+    
+    }
+    .b4phone h1{
+        font-size: 40px;
+    }
+    .b4phone p{
+        width: 400px;
+        font-size: 18px;
+        font-weight: 100;
+    }
+    
+    .b4phone img{
+        width: 400px;
+    }
+
+    .a5phone{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top:3900px;
+        gap: 50px;
         letter-spacing: 1px;
         word-spacing: 1px;
      
     
     }
     .a5phone h1{
-        font-size: 60px;
+        font-size: 40px;
     }
     .a5phone p{
         width: 400px;
-        font-size: 30px;
+        font-size: 18px;
         font-weight: 100;
     }
     
     .a5phone img{
-        width: 600px;
+        width: 400px;
     }
     .a6computer{
         width: 100%;
-        height: 950px;
+        height: 650px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         position: absolute;
-        top:6000px;
+        top:4700px;
         gap: 20px;
         letter-spacing: 1px;
         word-spacing: 1px;
@@ -902,15 +1090,12 @@ main{
     
     }
     .a6computer h1{
-        font-size: 50px;
+        font-size: 35px;
         font-weight: 600;
-        left: 20px;
+     
     }
-    .a6computer h1{
-        font-size: 50px;
-        font-weight: 600;
-    }
-    .a6computer span{
+    
+    .a6computer .info-h1{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -918,7 +1103,7 @@ main{
     }
     
     .a6computer img{
-        width: 800px;
+        width: 400px;
     }
     /* .payment{
         position: absolute;
@@ -930,32 +1115,32 @@ main{
     } */
     .faq1{
         width:100% ;
-        height: 500px;
+        height: 400px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 20px;
         position: absolute;
-        top:7140px;
+        top:5500px;
     
     }
     .faq1 h1{
-        font-size: 55px;
+        font-size: 40px;
     }
     .faq1 .input-group{
-        width: 70%;
+        width: 100%;
         height: 90px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 60px;
+        padding: 0 15px;
         border-radius: 30px;
         background:linear-gradient(rgba(206, 199, 199, 0.1),rgba(197, 191, 191, 0.1)) ;
     
     }
     .faq1 .input-group b{
-        font-size: 35px;
+        font-size: 20px;
         font-family: 400;
         color: rgb(77, 75, 75);
     }
@@ -966,38 +1151,41 @@ main{
     
     }
     .faq1 .input-group .plus-btn img{
-        width: 45px;
+        width: 30px;
         background-color: transparent;
         border-radius: 30px;
         background-color: rgba(0, 0, 255, 0.854);
         cursor: pointer;
     
     }
-    .footer{
-        width: 90%;
-        height: 220px;
-        padding: 0 40px;
-        margin-top: 300px;
-        position: relative;
-        top: 7500px;
-    }
-    .footer p{
-        font-weight: 100;
-        color:rgb(116, 113, 113) ;
-        font-size: 18px;
-    }
     .endfaqs{
-        width: 80%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
-        top: 7600px;
-        font-size: 30px;
+        top: 6100px;
+        font-size: 18px;
     }
     .endfaqs a{
         color: rgb(27, 202, 202);
-    }     
+    }  
+
+    
+    .footer{
+        width: 100%;
+        height: 220px;
+        padding: 0 40px;
+        margin-top: 300px;
+        position: relative;
+        top: 6000px;
+    }
+    .footer p{
+        font-weight: 100;
+        color:rgb(116, 113, 113) ;
+        font-size: 12px;
+    }
+       
    
 
 
@@ -1019,16 +1207,16 @@ main{
 
 
     .show-nav {
-        right: 50%;
+        right: -43.5%;
     }
     .menu-btn {
-        width: 70px;
+        width: 30px;
         cursor: pointer;
         transition: .3s ease;
     display: flex ;
     position: absolute;
-    left: 1200px;
-    top: 5px;
+    left: 420px;
+    top: 25px;
 }
 .close-btn {
     cursor: pointer;
