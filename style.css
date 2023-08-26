@@ -665,9 +665,9 @@ main{
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 10px;
         position: absolute;
-        right: 50px;
+        right: 70px;
     }
     .menu-button .login , .signup{
         width: 60px;
@@ -884,7 +884,7 @@ main{
         position: absolute;
         width: 400px;
         height: 350px;
-        left: 30px;
+        left: 10px;
         top: 520px;
         border-radius: 30px;
         cursor: pointer;
@@ -1215,7 +1215,7 @@ main{
         transition: .3s ease;
     display: flex ;
     position: absolute;
-    left: 420px;
+    left: 370px;
     top: 25px;
 }
 .close-btn {
