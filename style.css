@@ -1227,3 +1227,729 @@ main{
     top: 5px;
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:375px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    body{
+        width: 100%;
+        height: 100vh;
+    }
+    
+    header{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        background-color: white;
+    }
+    header .logo{
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    .logo img{
+        width: 50px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    .logo h1{
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    .display-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        margin-top: 800px;
+        margin-left: 300px;
+        flex-direction: column;
+        height: 720px;
+       
+        width: 100%;
+        background-color: rgb(15, 62, 103);
+        right:100%;
+        padding: 20px;
+        transition: .4s ease all;
+        position: absolute;
+     
+    }
+    .display-menu a {
+        padding-left: 2px;
+        gap: 3px;
+        font-size: 16px;
+    }
+  
+    
+    nav a{
+       text-decoration: none;
+       color: black;
+       letter-spacing: 1px;
+       transition: 1s ease all;
+    }
+    .btn-button{
+        width: 15%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
+        right: 200px;
+    }
+    .btn-button .login, .signup{
+        width: 160px;
+        height: 40px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .btn-button .login{
+        background-color: rgb(34, 34, 208);
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+    .btn-button .signup{
+        background-color: white;
+        color:rgb(34, 34, 208) ;
+        border: 1px solid rgb(34, 34, 208);
+        border-radius: 5px;
+    }
+
+
+
+
+    .menu-button{
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        right: 55px;
+    }
+    .menu-button .login , .signup{
+        width: 60px;
+        height: 22px;
+        font-size: 10px;
+        cursor: pointer;
+    }
+    .menu-button .login{
+        background-color: rgb(34, 34, 208);
+        color: white;
+        border: none;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+    .menu-button .signup{
+        background-color: white;
+        color:rgb(34, 34, 208) ;
+        border: 1px solid rgb(34, 34, 208);
+        border-radius: 5px;
+    }
+
+    form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 15px;
+        background-color: white;
+        padding: 30px;
+        margin: 0 auto;
+        border-radius: 15px;
+    }
+    
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px !important;
+        color: black;
+        font-weight: 100;
+        width: 100%;
+        
+    
+    }
+    .input-group{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .input-group input, .acct-btn{
+        width: 100%;
+        padding: 10px;
+        outline: none;
+        border: 1px solid grey;
+        font-weight: lighter;
+        color: black;
+    }
+    .input-group input::placeholder{
+        font-weight: 100;
+    }
+    .input-group input:focus{
+        border: 1px solid rgb(23, 111, 188);
+    }
+    .input-group .acct-btn{
+        border: 1px solid rgb(23, 111, 188);
+        color: grey;
+        background-color: transparent;
+        font-size: 15px;
+        cursor: pointer;
+        transition: 2s ease all;
+    }
+    .input-group .acct-btn:hover{
+        background-color: rgb(23, 111, 188);
+        color: white;
+    }
+
+
+
+
+
+.social-account{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.social-account span{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 16px;
+    font-weight: 200;
+    color: grey;
+}
+.social-account p img{
+    width: 15px;
+    
+}
+.social-account p a:hover img{
+    filter: grayscale(1);
+}
+.social-account p a:hover img{
+    filter: grayscale(1);}
+
+
+
+@keyframes colorful{
+    0%{
+    
+    }
+    25%{
+    
+    }
+    50%{
+    
+    }
+    75%{
+    
+    }
+    100%{
+    
+    }
+}
+@keyframes fading{
+    0%{background-image: url("./image1/btc.jpeg");
+        
+    }
+    25%{background-image: url("./image1/btc1.jpeg");
+        
+    }
+    50%{background-image: url("./image1/euth1.avif");
+       
+    }
+    75%{background-image: url("./image1/eutherium.jpeg");
+        
+    }
+    100%{background-image: url("./image1/dodge.jp");
+        
+    }
+    
+}
+
+
+main{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    position: relative;
+    
+    transition: all ease .5s;
+    animation: fading;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    background-image: url("./image/btc.jpeg");
+    background-size: 100%;
+    background-position: fit-content fit-content;
+    background-repeat: no-repeat;
+    background-color: blue;
+}
+    .banner{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        top: 100px;
+        position: absolute;
+        gap: 10px;
+    }
+    .banner .hh1{
+        position: relative;
+        width: 100% ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+        margin-bottom: 5px;
+        top: 80px;
+       
+        
+
+    }
+    .banner .pp1{
+        position:relative;
+        font-size: 16px;
+        margin-bottom: 20px;
+        top: 100px;
+       
+        
+
+    }
+    
+     .bannerlogo img{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        left: 10px;
+        top: 520px;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    .bitphone{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 900px;
+        gap: 50px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        background-color: aliceblue;
+    }
+    .bitphone h1{
+        width: 100%;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bitphone p{
+        width: 350px;
+        font-size: 18px;
+        font-weight: 100;
+        
+    }
+    .bitphone small{
+        cursor: pointer;
+        color:rgb(34, 34, 208) ;
+    }
+    .bitphone img{
+        width: 400px;
+    }
+    
+    .a2phone{
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top:1700px;
+        gap: 50px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+    }
+    .a2phone h1{
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .a2phone p{
+        width: 350px;
+        font-size: 18px;
+        font-weight: 100;
+    }
+    
+    .a2phone img{
+        width: 400px;
+    }
+    
+
+    .b2phone{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top:1700px;
+        gap: 50px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+    }
+    .b2phone h1{
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .b2phone p{
+        width: 350px;
+        font-size: 18px;
+        font-weight: 100;
+    }
+    
+    .b2phone img{
+        width: 400px;
+    }
+    
+    
+    .a3phone{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top:2450px;
+        gap: 50px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        background-color: aliceblue;
+    }
+    .a3phone h1{
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .a3phone p{
+        width: 350px;
+        font-size: 18px;
+        font-weight: 100;
+    }
+    
+    .a3phone img{
+        width: 400px;
+    }
+    .a4phone{
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top:3150px;
+        gap: 50px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+    
+    }
+    .a4phone h1{
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .a4phone p{
+        width: 350px;
+        font-size: 18px;
+        font-weight: 100;
+    }
+    
+    .a4phone img{
+        width: 400px;
+    }
+
+
+    .b4phone{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top:3150px;
+        gap: 50px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+    
+    }
+    .b4phone h1{
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .b4phone p{
+        width: 350px;
+        font-size: 18px;
+        font-weight: 100;
+    }
+    
+    .b4phone img{
+        width: 400px;
+    }
+
+    .a5phone{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top:3900px;
+        gap: 50px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+     
+    
+    }
+    .a5phone h1{
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .a5phone p{
+        width: 350px;
+        font-size: 18px;
+        font-weight: 100;
+    }
+    
+    .a5phone img{
+        width: 400px;
+    }
+    .a6computer{
+        width: 100%;
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top:4700px;
+        gap: 20px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        background-color: aliceblue;
+    
+    }
+    .a6computer h1{
+        width: 350px;
+        font-size: 30px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+    }
+    
+    .a6computer .info-h1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .a6computer img{
+        width: 380px;
+    }
+    /* .payment{
+        position: absolute;
+        top:7000px;
+    }
+    .payment img{
+        width: 800px;
+        height: 800px;
+    } */
+    .faq1{
+        width:100% ;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
+        top:5500px;
+    
+    }
+    .faq1 h1{
+        font-size: 40px;
+    }
+    .faq1 .input-group{
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+        border-radius: 30px;
+        background:linear-gradient(rgba(206, 199, 199, 0.1),rgba(197, 191, 191, 0.1)) ;
+    
+    }
+    .faq1 .input-group b{
+        font-size: 20px;
+        font-family: 400;
+        color: rgb(77, 75, 75);
+    }
+    .faq1 .input-group .plus-btn{
+        border: none;
+        border-radius: 30px;
+      
+    
+    }
+    .faq1 .input-group .plus-btn img{
+        width: 30px;
+        background-color: transparent;
+        border-radius: 30px;
+        background-color: rgba(0, 0, 255, 0.854);
+        cursor: pointer;
+    
+    }
+    .endfaqs{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 6100px;
+        font-size: 18px;
+    }
+    .endfaqs a{
+        color: rgb(27, 202, 202);
+    }  
+
+    
+    .footer{
+        width: 100%;
+        height: 220px;
+        padding: 0 40px;
+        margin-top: 300px;
+        position: relative;
+        top: 6000px;
+    }
+    .footer p{
+        font-weight: 100;
+        color:rgb(116, 113, 113) ;
+        font-size: 12px;
+    }
+       
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .show-nav {
+        right: -48.3%;
+    }
+    .menu-btn {
+        width: 30px;
+        cursor: pointer;
+        transition: .3s ease;
+    display: flex ;
+    position: absolute;
+    left: 340px;
+    top: 25px;
+}
+.close-btn {
+    cursor: pointer;
+        transition: .3s ease;
+    display: none ;
+    position: absolute;
+    left: 1200px;
+    top: 5px;
+}
+}
