@@ -1371,7 +1371,7 @@ main{
     .menu-button .login , .signup{
         width: 60px;
         height: 22px;
-        font-size: 9px;
+        font-size: 8px;
         cursor: pointer;
     }
     .menu-button .login{
